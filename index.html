@@ -82,21 +82,23 @@
       <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
         <p class="date-item">
           <label for="arrival-date">Дата заезда:</label>
-          <input type="date" id="arrival-date" name="arrival-date" value="2017-04-24">
+          <input type="text" id="arrival-date" name="arrival-date" value="24 апреля 2017">
         </p>
         <p class="date-item">
           <label for="date-of-departure">Дата выезда:</label>
-          <input type="date" id="date-of-departure" name="date-of-departure" value="2017-07-04">
+          <input type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017">
         </p>
         <p class="Number-of-people-item">
-          <label for="Adults">Взрослые:</label>
-          <button type="button" id="Adults" name="adults">-</button> 2
-          <button type="button" name="adults">+</button>
+          <label for="adults">Взрослые:</label>
+          <button type="button">-</button>
+          <input type="number" id="adults" name="amount-of-adults" min="1" max="100" step="1" value="2">
+          <button type="button">+</button>
         </p>
         <p class="Number-of-people-item">
-          <label for="Kids">Дети:</label>
-          <button type="button" id="Kids" name="kids">-</button> 0
-          <button type="button" name="kids">+</button>
+          <label for="kids">Дети:</label>
+          <button type="button">-</button>
+          <input type="number" id="kids" name="amount-of-Kids" min="1" max="100" step="1" value="0">
+          <button type="button">+</button>
         </p>
         <button class="button-search" type="submit">Найти</button>
       </form>
