@@ -16,7 +16,7 @@
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="Hotels.html">Гостиницы</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
       <a href="index.html">
         <img src="img/logo.jpg" width="170" height="70" alt="Логотип сайта городка Седона">
@@ -78,29 +78,31 @@
     <section>
       <h3>Заинтересовались?</h3>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="button-search" type="button"> Поиск гостиницы в Седоне </button>
+      <button class="button button-search-hotels" type="button"> Поиск гостиницы в Седоне </button>
       <form class="form-search" action="https://echo.htmlacademy.ru/courses" method="post">
-        <p class="date-item">
+        <p>
           <label for="arrival-date">Дата заезда:</label>
-          <input type="text" id="arrival-date" name="arrival-date" value="24 апреля 2017">
+          <input class="date-item" type="text" id="arrival-date" name="arrival-date" value="24 апреля 2017">
+          <input class="calendar" type="button" name="calendar">
         </p>
-        <p class="date-item">
+        <p>
           <label for="date-of-departure">Дата выезда:</label>
-          <input type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017">
+          <input class="date-item" type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017">
+          <input class="calendar" type="button" name="calendar">
         </p>
-        <p class="Number-of-people-item">
+        <p class="number-of-people-item">
           <label for="adults">Взрослые:</label>
-          <button type="button">-</button>
+          <button class="plus-minus" type="button">-</button>
           <input type="number" id="adults" name="amount-of-adults" min="1" max="100" step="1" value="2">
-          <button type="button">+</button>
+          <button class="plus-minus" type="button">+</button>
         </p>
-        <p class="Number-of-people-item">
+        <p class="number-of-people-item">
           <label for="kids">Дети:</label>
-          <button type="button">-</button>
+          <button class="plus-minus" type="button">-</button>
           <input type="number" id="kids" name="amount-of-Kids" min="1" max="100" step="1" value="0">
-          <button type="button">+</button>
+          <button class="plus-minus" type="button">+</button>
         </p>
-        <button class="button-search" type="submit">Найти</button>
+        <button class=" button button-search" type="submit">Найти</button>
       </form>
     </section>
   </main>
