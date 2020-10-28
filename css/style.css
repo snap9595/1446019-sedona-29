@@ -93,8 +93,8 @@ img {
 }
 
 .button-search-hotels {
-  font Size: 21px;
-  line Height: 26px;
+  font-size: 21px;
+  line-height: 26px;
   color: var(--basic-white);
   background-color: var(--basic-light-brown);
 }
@@ -111,8 +111,8 @@ img {
 }
 
 .date-item {
-  font Size: 14px;
-  line Height: 26px;
+  font-size: 14px;
+  line-height: 26px;
   font-style: bold;
   text-align: left;
   vertical-align: middle;
