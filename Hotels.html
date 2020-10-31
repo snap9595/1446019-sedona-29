@@ -13,82 +13,117 @@
   <header class="main-header">
     <nav class="main-nav">
       <ul class="site-navigation">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="Hotels.html">Гостиницы</a></li>
+        <li><a class="act" href="blank.html">Информация</a></li>
+        <li><a class="act" href="blank.html">Фото и видео</a></li>
+        <li><a class="act" href="blank.html">Карта штата</a></li>
+        <li><a class="act active">Гостиницы</a></li>
       </ul>
-      <a href="index.html">
-        <img src="img/logo.jpg" width="170" height="70" alt="Логотип сайта городка Седона">
-      </a>
+      <a href="index.html"><img src="img/logo.svg" width="138" height="70" alt="Sedona"></a>
     </nav>
   </header>
   <main class="center">
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul>
+          <li class="">
+            <input class="" type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">бассейн</label>
+          </li>
+          <li class="">
+            <input class="" type="checkbox" name="parking" id="parking">
+            <label for="pool">парковка</label>
+          </li>
+          <li class="">
+            <input class="" type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="pool">wi-fi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li class="">
+            <input class="" type="checkbox" name="hotel" id="hotel" checked>
+            <label for="pool">гостиница</label>
+          </li>
+          <li class="">
+            <input class="" type="checkbox" name="motel" id="motel" checked>
+            <label for="pool">мотель</label>
+          </li>
+          <li class="">
+            <input class="" type="checkbox" name="apartments" id="apartments" checked>
+            <label for="pool">апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="price" name="price">
+        <legend class="price-title">Стоимость в сутки (Р):</legend>
+        <label for="price-min" class="price-min-label">от</label>
+        <input class="price-min" type="number" name="min" id="price-min" value="0" min="0" max="3000">
+        <label for="price-max" class="price-max-label">до</label>
+        <input class="price-max" type="number" name="max" id="price-max" value="3000" min="0" max="3000">
+        <input class="button show" type="submit" id="form-btn" name="form-btn" value="Показать">
+      </fieldset>
+
+    </form>
+
+    <h1 class="find">Найдено:3</h1>
+    <p>Сортировка</p>
+    <a class="by-price" href="blank.html">По цене</a>
+    <a class="type" href="blank.html">По типу</a>
+    <a class="by-rating" href="blank.html">По рейтингу</a>
+    <a href="#" class="arrow-up"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.5 0L0 10h11L5.5 0z" fill="currentColor" />
+      </svg></a>
+    <a href="#" class="arrow-down"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.5 10L0 0H11" fill="currentColor" />
+      </svg>
+    </a>
     <section>
-      <h2>Фильтр отелей</h2>
-      <ul>
+      <ul class="hotels">
         <li>
-          <a href="hotel.html">
-            <h3>Amara Resort & Spa </h3>
+          <a class="hotels-item" href="hotel.html">
+            <h2>Amara Resort & Spa </h2>
             <img src="img/amara.jpg" width="135" height="90" alt="Отель Amara">
           </a>
           <p>гостиница</p>
           <p>от 4000р.</p>
-          <a href="blank.html">подробнее</a>
-          <a href="blank.html">забронировать</a>
+          <a class="details" href="blank.html">подробнее</a>
+          <a class="reserve" href="blank.html">забронировать</a>
           <p>Рейтинг: 8,5</p>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
         </li>
-        <li>
+        <li class="hotels-item">
           <a href="hotel.html">
-            <h3>Desert Quail Inn </h3>
+            <h2>Desert Quail Inn </h2>
             <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert">
           </a>
           <p>Мотель</p>
           <p>от 3000р.</p>
-          <a href="blank.html">подробнее</a>
-          <a href="blank.html">забронировать</a>
+          <a class="details" href="blank.html">подробнее</a>
+          <a class="reserve" href="blank.html">забронировать</a>
           <p>Рейтинг: 8,9</p>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
 
         </li>
-        <li>
+        <li class="hotels-item">
           <a href="hotel.html">
-            <h3>Villas at Poco Diablo </h3>
+            <h2>Villas at Poco Diablo </h2>
             <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas">
           </a>
           <p>Апартаменты</p>
           <p>от 2000р.</p>
-          <a href="blank.html">подробнее</a>
-          <a href="blank.html">забронировать</a>
+          <a class="details" href="blank.html">подробнее</a>
+          <a class="reserve" href="blank.html">забронировать</a>
           <p>Рейтинг: 9,2</p>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-          <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2" />
-          </svg>
-
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
+          <img class="proposal__star" src="img/star.svg" alt="звезда" width="18" height="18">
         </li>
       </ul>
     </section>
@@ -105,17 +140,35 @@
       <h2>Ссылки на соц. сети</h2>
       <ul class="footer-social">
         <li>
-          <a href="#">Твиттер</a>
+          <a class="social-button" href="#">
+            <svg class="social-badge-twitter" width="16.98" height="15.01" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11 1.1c1.6-.5 3 .3 3.5 1.2l2-.7c0 .7-.3 1.3-.8 1.8.7.2 1.3-.5 1.3-.5a3 3 0 01-1.6 2c-.2 6.8-3.2 11.2-10 11.1h-.5c-.4 0-4.2-.5-4.9-1.9 2.3.2 3.9-.4 4.7-1.2-1-.3-2.7-.4-3-3 .4.2.6.3 1.2.2C1.7 9.2.4 8.5.4 6.3c.3.4 1.1.6 1.4.5-.7-.2-2-3.4-1-5 2 1.9 3.8 3.7 7.2 3.8.3-2.3 1.2-3.8 3-4.5z"
+                fill="currentColor" />
+            </svg>
+          </a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#">
+            <svg class="social-badge-facebook" width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="currentColor" />
+            </svg></a>
         </li>
         <li>
-          <a href="#">Ютуб</a>
+          <a class="social-button" href="#">
+            <svg class="social-badge-youtube" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h14a3 3 0 013 3v10a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm3 4v8l9-4-9-4z" fill="currentColor" />
+            </svg></a>
         </li>
       </ul>
     </section>
-    <p class="footer-copyright"> WEBSITE BY <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    <p class="footer-copyright"> WEBSITE BY <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <svg class=" footer-copyright" width="115" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M15.5 1h-.1L0 2.8v28.8l15.4 9.3 15.3-9.3V2.7L15.5 1.1zM77 2.7h-2v13.1h2v-13zM41 2.6v5.2a4 4 0 012.8-1.3c1 0 2 .3 2.6 1 .7.7 1 1.7 1 2.7v5.6h-2v-5.3c.1-.6 0-1-.3-1.5-.4-.4-.8-.6-1.3-.7h-.3c-1 0-2 .6-2.5 1.5v6h-2V2.6h2zM77 31.5h-1.7V30a4 4 0 01-3.4 1.6 4.7 4.7 0 01-4.3-4.7c0-2.5 1.9-4.6 4.3-4.8a4 4 0 013.2 1.5v-5.4h2v13.2zM47 30l.6-.1v1.4l-1.2.2c-.8 0-1.5-.4-1.8-1a5 5 0 01-3.3 1.1c-1.6 0-3-.9-3-2.8 0-2.3 2-3 3.9-3l2.3.3V26c0-1-.8-2-2.4-2-1 0-2.1.3-3.1.8v-1.9c1-.3 2.2-.5 3.3-.6 2.5 0 4 1.2 4 4v3.2l.2.4c.1.2.2.2.4.2h.2zm-6.7-1.3c0 .4.2.8.5 1 .3.3.6.4 1 .4h.1c1 0 1.9-.4 2.6-1v-1.6a10 10 0 00-2-.2c-1 0-2.2.3-2.2 1.4zM56 23c-.8-.4-1.7-.7-2.7-.7H53c-1.2 0-2.3.6-3.1 1.5-.9 1-1.3 2.1-1.3 3.4v.4a4.5 4.5 0 004.7 4.2c1 0 2-.2 3-.6v-1.8c-.8.4-1.7.7-2.6.7-1 0-2.1-.5-2.7-1.5a3 3 0 010-3c.6-1 1.6-1.5 2.7-1.5.9 0 1.7.3 2.4.8v-1.9zm10.2 7.2l.5-.1v1.4l-1.2.2c-.8 0-1.5-.4-1.8-1a5 5 0 01-3.3 1.1c-1.6 0-3-.9-3-2.8 0-2.3 2-3 3.9-3 .7 0 1.5.1 2.2.3V26c0-1-.8-2-2.3-2-1 0-2.1.3-3.1.8v-1.9c1-.3 2.2-.5 3.3-.6 2.5 0 4 1.2 4 4v3.2c0 .2 0 .3.2.4 0 .2.2.2.4.2h.2zm-6.3-.3c-.3-.2-.5-.6-.5-1 0-1 1.1-1.4 2.3-1.4.6 0 1.2 0 1.9.2V29c-.7.7-1.6 1-2.6 1-.5.1-.9 0-1.1-.3zm9.4-2.9a3 3 0 013-3v.1A3 3 0 0175 26V28a3 3 0 01-2.9 2 3 3 0 01-2.9-3zm14-4.7c3.5 0 4.8 3 4.2 5.5h-6.6c.2 1.7 1.8 2.3 3.4 2.3 1 0 1.9-.2 2.8-.6V31c-1 .4-2.1.7-3.2.6-2.7 0-5-1.5-5-4.7 0-1.2.3-2.4 1.1-3.3.8-1 2-1.4 3.1-1.5h.2zm-2.4 4a2.4 2.4 0 012.5-2.3 2 2 0 011.8.6c.4.5.6 1.1.6 1.7h-5zm8.6 5.3v-9h1.7v1a4 4 0 013-1.3 3 3 0 012.7 1.5c.8-.9 2-1.4 3.1-1.4 1 0 1.9.3 2.5 1 .7.7 1 1.6.9 2.6v5.6h-2v-5.6c0-.4 0-.9-.4-1.2-.3-.4-.7-.6-1.1-.7h-.3a3 3 0 00-2.2 1.2v6.3h-2v-5.6c0-.4 0-.9-.4-1.2-.2-.4-.7-.6-1.1-.7h-.2c-1 .1-1.8.6-2.3 1.4v6.1h-1.9zm24.5-9h-2l-2.7 6.8-3-6.8h-2.1l4.2 9-.2.5c-.5 1.4-1.2 2-2.1 2a3 3 0 01-1 0v1.6l1.2.2c1.3 0 2.6-.8 3.6-3.1l4-10.2zM52.7 6.8V3.5l-2 .5v2.7h-1.6v1.8h1.7V13c0 .8.2 1.6.8 2.2.6.6 1.4.9 2.2.7a7 7 0 002.3-.3v-1.8c-.5.3-1.1.4-1.7.4-1.2 0-1.7-.4-1.7-1.6v-4h3.2V6.7h-3.2zm5.7 9v-9H60v1a4 4 0 013-1.3 3 3 0 012.7 1.4c.8-.9 1.9-1.4 3-1.4 1 0 2 .3 2.6 1 .6.7 1 1.7.8 2.6v5.6h-2v-5.5c0-.5 0-1-.4-1.3-.2-.3-.7-.6-1.1-.6h-.2a3 3 0 00-2.2 1.2v6.2h-2v-5.5c0-.5-.1-1-.4-1.3-.3-.3-.7-.6-1.1-.6h-.3c-1 0-1.8.6-2.3 1.4v6h-1.8zM28.7 30.3zm0-12v12l-13.3 8.1-13.4-8V18.4l13.3 8.1V28l-9.1-5.5V24l9.1 5.7V31l-9.1-5.6V27l9.2 5.6 9.2-5.7v-6l4.1-2.6zm0-1.5L25 18.9 23.3 20l-8-5v1.5l6.9 4.2-.2.1-1 .6-5.7-3.4v1.4l4.5 2.7-1 .7-3.5-2v1.4l2.2 1.3-2.2 1.4-13.2-8 13.2-8.2 13.4 8zM15.3 7.3l13.4 8V4.7L15.4 3 2 4.6v10.8l13.3-8.1z"
+            fill="currentColor" />
+        </svg> </a>
+
     </p>
   </foater>
 </body>

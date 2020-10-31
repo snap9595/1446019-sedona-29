@@ -11,6 +11,8 @@
   --basic-light-blue: #81B3D2;
   --basic-blue: #669EC0;
   --basic-dark-blue: #5496BD;
+  --basic-darknest-blue: #283b42;
+  --basic-gray-up: #CACACA;
   --basic-gray-lighter: #ABABAB;
   --basic-light-gray: #f2f2f2;
   --basic-extra-gray: #A9A9A9;
@@ -55,6 +57,10 @@ img {
   list-style: none;
 }
 
+.site-navigation li:last-of-type .active {
+  color: var(--basic-light-brown);
+}
+
 .site-navigation a {
   color: var(--basic-black);
 }
@@ -65,6 +71,107 @@ img {
 }
 
 .site-navigation a:active {
+  color: var(--basic-lighter-black);
+}
+
+/* .site-navigation:nth-last-child(1) li {
+  color: var(--basic-black);
+}
+*/
+.find {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.filter {
+  color: var(--basic-white);
+  background-color: var(--basic-darknest-blue);
+  background-image: url("../img/hotel-bg-search.jpg");
+  background-repeat: no-repeat;
+}
+
+.show {
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  background: transparent;
+  background-color: transparent;
+}
+
+.show:hover,
+.show:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.arrow-up {
+  color: var(--basic-gray-up);
+}
+
+.arrow-down {
+  color: var(--basic-light-blue);
+}
+
+.arrow-up:hover,
+.arrow-down:hover,
+.arrow-up:focus,
+.arrow-down:focus {
+  color: var(--basic-black);
+}
+
+.arrow-up:active,
+.arrow-down:active {
+  color: var(--basic-light-blue);
+}
+
+.by-price {
+  color: var(--basic-light-blue);
+}
+
+.type,
+.by-rating {
+  color: var(--basic-lighter-black);
+  border-bottom: 1px dashed var(--basic-light-blue);
+}
+
+.type:hover,
+.by-rating:hover,
+.type:focus,
+.by-rating:focus {
+  color: var(--basic-light-blue);
+}
+
+.type:active,
+.by-rating:active {
+  color: var(--basic-black);
+  border: none;
+}
+
+.hotels {
+  list-style: none;
+}
+
+.hotels-item h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.hotels-item h2:hover,
+.hotels-item h2:focus {
+  color: var(--basic-blue);
+}
+
+.hotels-item h2:active {
   color: var(--basic-lighter-black);
 }
 
@@ -82,9 +189,49 @@ img {
   line-height: 21px;
 }
 
+.details {
+  width: 110px;
+  height: 27px;
+  padding: 3px 16px 3px 17px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+}
+
+.details:hover,
+.details:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.details:active {
+  color: var(--basic-transparent-white30);
+  background-color: var(--basic-dark-blue);
+}
+
+.reserve {
+  width: 142px;
+  height: 27px;
+  padding: 3px 17px 3px 16px;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
+}
+
+.reserve:hover,
+.reserve:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.reserve:active {
+  color: var(--basic-transparent-white30);
+  background-color: var(--basic-dark-brown);
+}
+
 .button {
   font: inherit;
-  font-style: bold;
+  font-weight: normal;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -110,10 +257,14 @@ img {
   background-color: var(--basic-dark-brown);
 }
 
+.form-search {
+  font-weight: bold;
+}
+
 .date-item {
   font-size: 14px;
   line-height: 26px;
-  font-style: bold;
+  font-weight: bold;
   text-align: left;
   vertical-align: middle;
   text-transform: uppercase;
@@ -201,6 +352,41 @@ img {
   list-style: none;
 }
 
+.social-button {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: var(--basic-light-blue);
+}
+
+.social-badge-twitter {
+  color: var(--basic-white);
+  padding: 16.99px 14.01px 16px 15px;
+}
+
+.social-badge-facebook {
+  color: var(--basic-white);
+  padding: 13px 17px;
+}
+
+.social-badge-youtube {
+  color: var(--basic-white);
+  padding: 16px 13px;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-blue);
+}
+
+.social-button:active,
+.social-badge-twitter:active,
+.social-badge-facebook:active,
+.social-badge-youtube:active {
+  color: var(--basic-transparent-white30);
+  background-color: var(--basic-dark-blue);
+}
+
 .footer-social a:hover,
 .footer-social a:focus {
   color: var(--basic-blue);
@@ -208,6 +394,10 @@ img {
 
 .footer-social a:active {
   color: var(--basic-lighter-black);
+}
+
+.footer-copyright a {
+  color: var(--basic-black);
 }
 
 .footer-copyright a:hover,
